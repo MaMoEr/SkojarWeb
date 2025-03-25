@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skojar</title>
+    <style>
+        @font-face {
+            font-family: 'Opus Mundi';
+            src: url(public/font/opusmundi.ttf);
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #6C84BD;
+        }
+        .centered-text {
+            text-align: center;
+            position: relative;
+        }
+        .centered-text .relative-container {
+            position: relative;
+            display: inline-block;
+        }
+        .centered-text h1 {
+            text-align: center;
+            color: #FAF2A1;
+            font-family: "Opus Mundi";
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0px;
+            position: relative;
+            z-index: 1;
+        }
+        .centered-text .relative-container::before {
+            content: "";
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background: url(public/images/Paket400.png) no-repeat center center;
+            background-size: contain;
+            z-index: -1;
+            opacity: 1; /* Adjust the opacity as needed */
+        }
+        .centered-text p {
+            color: #FFF;
+            font-family: Inter;
+            font-optical-sizing: auto;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 0px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-text">
+        <div class="relative-container">
+            <h1>SKOJAR</h1>
+        </div>
+        <p>
+            Samla <img src="public/images/image-58.png" alt="icon"> 
+            Skapa <img src="public/images/image-58.png" alt="icon"> 
+            Upptäck
+        </p>
+    </div>
+</body>
+</html>
